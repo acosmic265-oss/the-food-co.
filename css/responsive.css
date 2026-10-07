@@ -1,0 +1,476 @@
+/* ============================================
+   TABLET STYLES (768px and below)
+   ============================================ */
+
+@media (max-width: 768px) {
+    :root {
+        --spacing-xl: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar.active .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        gap: 1rem;
+        border-bottom: 1px solid var(--glass-border);
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whyus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .find-us-content {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promo-content h2 {
+        font-size: 2rem;
+    }
+
+    .promo-cta {
+        gap: 0.8rem;
+    }
+
+    .promo .btn {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        gap: 0.8rem;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   MOBILE STYLES (480px and below)
+   ============================================ */
+
+@media (max-width: 480px) {
+    :root {
+        --spacing-lg: 2rem;
+        --spacing-md: 1.5rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo-text {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        min-height: 80vh;
+        margin-top: 50px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-tagline {
+        font-size: 1.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .spotlight {
+        padding: 3rem 1rem;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .spotlight-image {
+        height: 150px;
+    }
+
+    .whyus {
+        padding: 3rem 1rem;
+    }
+
+    .whyus-grid {
+        gap: 1.5rem;
+    }
+
+    .card-number {
+        font-size: 2rem;
+    }
+
+    .promo {
+        padding: 3rem 1rem;
+    }
+
+    .promo-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .promo-content p {
+        font-size: 1rem;
+    }
+
+    .menu-header {
+        padding: 2rem 1rem;
+    }
+
+    .menu-header h1 {
+        font-size: 2rem;
+    }
+
+    .menu-header p {
+        font-size: 1rem;
+    }
+
+    .menu-section {
+        padding: 2rem 1rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .menu-card {
+        padding: 1.2rem;
+    }
+
+    .card-image {
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .menu-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .menu-cta {
+        padding: 2rem 1rem;
+    }
+
+    .menu-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-hero {
+        padding: 2rem 1rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        padding: 2rem 1rem;
+    }
+
+    .about-container {
+        gap: 2rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .about-box {
+        height: 200px;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .detail-item {
+        padding: 1.2rem;
+    }
+
+    .values-section {
+        padding: 3rem 1rem;
+    }
+
+    .values-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-cta {
+        padding: 2rem 1rem;
+    }
+
+    .about-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-hero {
+        padding: 2rem 1rem;
+    }
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        padding: 2rem 1rem;
+    }
+
+    .contact-container {
+        gap: 2rem;
+    }
+
+    .contact-info {
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-form-section {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .find-us {
+        padding: 3rem 1rem;
+    }
+
+    .find-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .find-us-content {
+        gap: 1.5rem;
+    }
+
+    .find-us-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .find-us-text p {
+        font-size: 0.95rem;
+    }
+
+    .find-us-map {
+        height: 250px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section p {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+
+    .loading-title {
+        font-size: 2rem;
+    }
+
+    .loading-text {
+        font-size: 1rem;
+    }
+
+    .loading-bar {
+        width: 150px;
+    }
+
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
+    .scroll-indicator span {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================
+   VERY SMALL MOBILE (320px and below)
+   ============================================ */
+
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .menu-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.65rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION (mobile & tablet)
+   ============================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .about-visual {
+        display: none;
+    }
+
+    .find-us-map {
+        display: none;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-dark: #f5f5f5;
+        --secondary-dark: #e8e8e8;
+        --text-primary: #1a1a1a;
+        --text-secondary: #666666;
+        --glass-bg: rgba(0, 0, 0, 0.03);
+        --glass-border: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+        background-color: var(--primary-dark);
+    }
+      }
